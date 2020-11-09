@@ -10493,6 +10493,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   z-index: -1;
   animation: move 60s ease-in-out infinite;
   transform-origin: 50% 50%;
+  max-width: 100vw;
+  overflow:hidden;
 }
 
 
