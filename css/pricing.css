@@ -1,15 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-body{background-color:#eee;}
 
-#generic_price_table{
-background-color: #f0eded;
-}
 
 /*PRICE COLOR CODE START*/
 #generic_price_table .generic_content{
 background-color: #fff;
+border-radius: 10px;
 }
 
 #generic_price_table .generic_content .generic_head_price{
@@ -55,23 +52,19 @@ color: #414141;
 }
 #generic_price_table .generic_content .generic_feature_list ul li:hover{
 background-color: #E4E4E4;
-border-left: 5px solid #241e41;
+border-left: 5px solid #f55449;
 }
 
 #generic_price_table .generic_content .generic_price_btn a{
-border: 1px solid #241e41; 
-    color: #241e41;
+border: 1px solid #0f1f38; 
+    color: #0f1f38;
 } 
 
 .active-green #generic_price_table .generic_content .generic_feature_list ul li:hover{
     background-color: #E4E4E4;
-    border-left: 5px solid #241e41;
+    border-left: 5px solid #f55449;
     }
     
-.active-green #generic_price_table .generic_content .generic_price_btn a{
-border: 1px solid #241e41; 
-color: #241e41;
-} 
 
 #generic_price_table .generic_content.active-green .generic_head_price .generic_head_content .head_bg,
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
@@ -95,10 +88,6 @@ background-color: #E4E4E4;
 border-left: 5px solid #2e9acc;
 }
 
-.active-blue #generic_price_table .generic_content .generic_price_btn a{
-border: 1px solid #2e80cc; 
-    color: #2e85cc;
-} 
 
 #generic_price_table .generic_content.active-blue .generic_head_price .generic_head_content .head_bg,
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
@@ -110,12 +99,6 @@ color: #fff;
 #generic_price_table .generic_content.active-blue .generic_head_price .generic_head_content .head span{
 color: #fff;
 }
-
-#generic_price_table .generic_content:hover .generic_price_btn a,
-#generic_price_table .generic_content.active-blue.generic_price_btn a{
-background-color: #2e9acc;
-color: #fff;
-} 
 
 .active-red #generic_price_table .generic_content .generic_feature_list ul li:hover{
     background-color: #E4E4E4;
@@ -138,17 +121,11 @@ color: #fff;
     color: #fff;
     }
     
-    #generic_price_table .generic_content:hover .generic_price_btn a,
-    #generic_price_table .generic_content.active-red.generic_price_btn a{
-    background-color: #cc2e55;
-    color: #fff;
-    } 
-
         
         #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
-        border-color: #241e41 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #241e41;
+        border-color: #f55449 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f55449;
         color: #fff;
-        }
+        }s
         
         #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span{
         color: #fff;
@@ -161,7 +138,6 @@ color: #fff;
 
 #generic_price_table{
 margin: 50px 0 50px 0;
-    font-family: 'Raleway', sans-serif;
 }
 .row .table{
     padding: 28px 0;
@@ -501,13 +477,23 @@ text-decoration:none;
     margin-bottom: 38px
 }
 
-.shadow,
-.subscription-wrapper {
-    box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1) !important
+.shadow, .subscription-wrapper{
+    transition: 0.5s ease-in-out;
+}
+
+.shadow:hover,
+.subscription-wrapper:hover {
+    box-shadow: 0px 15px 39px 0px rgba(9, 15, 68, 0.50) !important;
+    transition: 0.5s ease-in-out;
+}
+
+.services-card-container .card{
+    background: #363237;
+    color: #f1f1f2;
 }
 
 .icon-primary {
-    color: #062caf
+    color: #325bee
 }
 
 .icon-bg-circle {
@@ -524,7 +510,7 @@ text-decoration:none;
 }
 
 .icon-bg-primary::after {
-    background: #062caf !important
+    background: #325bee !important
 }
 
 .icon-bg-circle::after {
@@ -553,7 +539,7 @@ p,
 }
 
 .icon-bg-purple::after {
-    background: #7952f5
+    background: #846bd4
 }
 
 .icon-yellow {
@@ -561,7 +547,7 @@ p,
 }
 
 .icon-purple {
-    color: #7952f5
+    color: #846bd4
 }
 
 .icon-cyan {
