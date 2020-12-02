@@ -493,7 +493,7 @@ text-decoration:none;
 }
 
 .icon-primary {
-    color: #062caf
+    color: #6a7ec9
 }
 
 .icon-bg-circle {
@@ -589,3 +589,43 @@ p,
 .icon-blue {
     color: #3682ff
 }
+
+.sitio_web:after {
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 200px solid #1e1e1f;
+    border-right: 100vw solid #3a6ea5;
+    width: 0;
+}
+
+
+.tienda_web:after {
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 200px solid #f1f1f2;
+    border-left: 100vw solid #1e1e1f;
+    width: 0;
+}
+
+
+#services:after {
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 200px solid #3a6ea5;
+    border-left: 100vw solid #f1f1f2;
+    width: 0;
+}
+
+
+.why:after {
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 100px solid #3a6ea5;
+    border-right: 100vw solid #f1f1f2;
+    width: 0;
+}
+
