@@ -19,6 +19,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/pricing.css" rel="stylesheet" />
@@ -62,9 +66,9 @@
     <section class="page-section white-section" id="services">
         <div class="container services-card-container">
             <div class="text-center">
-                <h1 class="section-heading pb-5">Todo lo que necesitas, en un solo lugar</h1>
+                <h1 class="section-heading pb-5 invisible"  id="services-heading" >Todo lo que necesitas, en un solo lugar</h1>
             </div>
-            <div class="row">
+            <div class="row invisible" id="services-row">
                 <div class="col-xs-12 col-md-6 col-lg-4" ontouchstart="this.classList.toggle('hover');">
                     <div class="service-card">
                         <div class="front" style="background-image: url(https://unsplash.it/501/501/)">
@@ -154,20 +158,15 @@
             </div>
         </div>
     </section>
-    <!-- About-->
-    <!-- <section class="row presu">
-            <div class="col-1"><img src="https://images.vexels.com/media/users/3/151869/isolated/preview/767ca771755f4675d4063c03e17c8595-medical-checklist-icon-by-vexels.png" style="margin-left: 50px;" height='70' alt=""></div>
-            <div class="col-4"><h3 class="presu-sh">Necesitas un presupuesto personalizado? Contactate con nosotros</h3></div>
-            <div class="col-1"><a class="btn btn-primary text-uppercase js-scroll-trigger" href="#contact">Contacto</a></div>
-        </section> -->
-    <section class="page-section blue-section sitio_web" id="about">
-        <div class="container" id="sitio_web">
+
+    <section class="page-section blue-section sitio_web" id="sitio_web" >
+        <div class="container">
             <div class="text-center">
-                <h2 class="section-heading">Tu sitio web propio.</h2>
-                <h3 class="section-subheading">Tene tu propia pagina web con el diseno que vos elijas. Un solo pago, te
+                <h2 class="section-heading invisible" id="web-prices-heading">Tu sitio web propio.</h2>
+                <h3 class="section-subheading invisible" id="web-prices-subheading">Tene tu propia pagina web con el diseno que vos elijas. Un solo pago, te
                     queda de por vida.</h3>
             </div>
-            <div id="generic_price_table">
+            <div class='web-prices invisible' id="generic_price_table">
                 <div class="container">
 
                     <!--BLOCK ROW START-->
@@ -368,14 +367,14 @@
         </div>
     </section>
     <!-- Store -->
-    <section class="page-section black-section tienda_web" id="about">
-        <div class="container" id="tienda_web">
+    <section class="page-section black-section tienda_web" id="tienda_web">
+        <div class="container">
             <div class="text-center">
-                <h2 class="section-heading">Tu tienda propia.</h2>
-                <h3 class="section-subheading text-muted">Tene tu propia tienda sin tener que depender de terceros y sin
+                <h2 class="section-heading invisible" id="store-prices-heading">Tu tienda propia.</h2>
+                <h3 class="section-subheading text-muted invisible" id="store-prices-subheading">Tene tu propia tienda sin tener que depender de terceros y sin
                     tener que pagar comisiones.</h3>
             </div>
-            <div id="generic_price_table">
+            <div class='store-prices invisible' id="generic_price_table">
                 <div class="container">
 
                     <!--BLOCK ROW START-->
@@ -579,42 +578,40 @@
     <section class="page-section white-section why" id='us'>
         <div class="container">
             <div class="text-center" style="margin-bottom: 10%;">
-                <h2 class="section-heading">Porque Phantom Agency</h2>
+                <h2 class="section-heading  invisible" id="why-heading">Porque Phantom Agency</h2>
             </div>
-            <div class="row mt-5 mb-5">
+            <div class="row mt-5 mb-5  invisible" id="why-1">
                 <div class="col-12 col-lg-5">
                     <img src="assets/img/collab.svg">
                 </div>
                 <div class="col-1 display-lg-hidden"></div>
                 <div class="col-12 col-lg-6 mt-4">
                     <h3>Constante Comunicacion con nosotros</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam quod ut earum, impedit et,
-                        fugit veritatis voluptatum similique cum autem ipsam dolore magni consequatur corporis
-                        perspiciatis alias! Provident, eum.</p>
+                    <p>Creemos en que la comunicacion permanente es nuestro fuerte. Siendo una empresa nueva, deseamos mantener a nuestros clientes satisfechos
+                        sin ningun inconveniente, respondiendote en 1 hora. No nos crees? Ponenos a prueba <a class='js-scroll-trigger' href="#contact">aca</a>.</p>
                 </div>
             </div>
-            <div class="row mt-5 mb-5">
+            <div class="row mt-5 mb-5  invisible" id="why-2">
                 <div class="col-12 col-lg-5">
                     <img src="assets/img/shop.svg">
                 </div>
                 <div class="col-1 display-lg-hidden"></div>
                 <div class="col-12 col-lg-6 mt-4">
-                    <h3>Constante Comunicacion con nosotros</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam quod ut earum, impedit et,
-                        fugit veritatis voluptatum similique cum autem ipsam dolore magni consequatur corporis
-                        perspiciatis alias! Provident, eum.</p>
+                    <h3>Crece en la nueva modalidad</h3>
+                    <p>Para seguir relevante en estas epocas cambiantes, necesitas algo nuevo. Nosotros te proponemos un diseno y una plataforma autoadministrable,
+                        para que puedas hacer los cambios que quieras sin tener que preocuparte por los cambios.</p>
                 </div>
             </div>
-            <div class="row mt-5 mb-5">
+            <div class="row mt-5 mb-5  invisible" id="why-3">
                 <div class="col-12 col-lg-5">
                     <img src="assets/img/relax.svg">
                 </div>
                 <div class="col-1 display-lg-hidden"></div>
                 <div class="col-12 col-lg-6 mt-4">
-                    <h3>Constante Comunicacion con nosotros</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam quod ut earum, impedit et,
-                        fugit veritatis voluptatum similique cum autem ipsam dolore magni consequatur corporis
-                        perspiciatis alias! Provident, eum.</p>
+                    <h3>Desde la comodidad de tu casa, con un solo click</h3>
+                    <p>Hacer una pagina web es estresante, te entendemos. Por eso, queremos solucionarte estos problemas, no crearte nuevos. Nuestra meta es que 
+                        tengas una pagina web a tu gusto sin tener que pedirle a 10 personas diferentes.
+                    </p>
                 </div>
             </div>
         </div>
@@ -623,23 +620,22 @@
     <section class="page-section blue-section" id="team">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading">Nuestro Equipo</h2>
-                <h3 class="section-subheading text-muted">Conoce las caras detras del desarrollo de tu proxima pagina
+                <h2 class="section-heading invisible" id="team-heading">Nuestro Equipo</h2>
+                <h3 class="section-subheading text-muted invisible" id="team-subheading">Conoce las caras detras del desarrollo de tu proxima pagina
                     web.</h3>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 invisible" id="team-1" >
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle"
-                            src="https://media-exp1.licdn.com/dms/image/C4D35AQF0Brvx1hrxSA/profile-framedphoto-shrink_800_800/0/1600560272142?e=1610398800&v=beta&t=R5vFc98FZyas5Kfj5A_7jiGuOVQXbDtD0Br-3cruGcU"
-                            alt="" />
+                        <img class="mx-auto rounded-circle" src="http://danterigoli.com/img/about-me.jpg" alt="" />
+
                         <h4>Delfina Rigoli</h4>
                         <p class="text-muted">Lead Designer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-figma"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 invisible" id="team-2">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="http://danterigoli.com/img/about-me.jpg" alt="" />
                         <h4>Dante Rigoli</h4>
@@ -648,7 +644,7 @@
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 invisible" id="team-3">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle"
                             src="https://media-exp1.licdn.com/dms/image/C4E03AQHiY6oCqmIjvQ/profile-displayphoto-shrink_800_800/0?e=1610582400&v=beta&t=W6EznUgJ4BXBualjTmDoPmn1hqlW85l2VTvFomvbbq0"
@@ -661,7 +657,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
+                <div class="col-lg-8 mx-auto text-center invisible" id="team-last">
                     <p class="large text-muted">+10 desarrolladores y disenadores disponibles las 24 horas para realizar
                         nuevos proyectos!</p>
                 </div>
